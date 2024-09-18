@@ -13,6 +13,9 @@ public class PlayerInfo : MonoBehaviour
 
     [SerializeField] Slider myDexSlider;
 
+    [SerializeField] GameObject myPanel;
+    [SerializeField] Animator myAnimator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,8 @@ public class PlayerInfo : MonoBehaviour
         myWisdom = PlayerStats.wisdom;
 
         myDexSlider.value = myDexterity;
+
+        myAnimator = myPanel.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -43,6 +48,10 @@ public class PlayerInfo : MonoBehaviour
     public void ChangeScene()
     {
         SceneManager.LoadScene("InfoScreen");
+    }
+    public void MovePanel()
+    {
+        myAnimator.SetBool("Move", true);
     }
 }
 
