@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SingletonClass.unity
+    guid: 8394ead2d148cbc409da75dee6c45979
+  - enabled: 1
+    path: Assets/Scenes/InfoScreen.unity
+    guid: 2820fe32ca3cd2f4d9c25f7738e17b4a
+  m_configObjects: {}
